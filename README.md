@@ -1,4 +1,4 @@
-# tiny-voca pt-BR
+# tiny-voca-ptbr-kokoro
 
 A small Brazilian Portuguese text-to-speech model with two voices, a woman (F)
 and a man (M). It has 4.5M parameters, ships as one 21 MB ONNX file, and runs
@@ -12,12 +12,14 @@ and eSpeak NG `pt-br` phonemes), a sentence corpus, and
 [Kokoro-82M](https://huggingface.co/hexgrad/Kokoro-82M) as the teacher that
 read it aloud. The model was trained from scratch on that synthetic speech.
 
-On Hugging Face: [the model](https://huggingface.co/HF_USER/tiny-voca-ptbr),
-with the samples playable on the page, and
-[a demo](https://huggingface.co/spaces/HF_USER/tiny-voca-ptbr-demo) where you
-can type a sentence and hear it (a free CPU Space).
+On Hugging Face: [the model](https://huggingface.co/Haple/tiny-voca-ptbr-kokoro),
+with the samples playable on the page.
 
-**Em português.** O tiny-voca pt-BR é um modelo pequeno de síntese de voz em
+Not to be confused with [SemFence/tiny-voca-ptbr](https://github.com/SemFence/tiny-voca-ptbr),
+another Brazilian Portuguese port made independently in the same week, with
+its own phonemizer, a Chatterbox teacher and a browser version.
+
+**Em português.** O tiny-voca-ptbr-kokoro é um modelo pequeno de síntese de voz em
 português do Brasil, com duas vozes: uma mulher (F) e um homem (M). São 4,5
 milhões de parâmetros num arquivo ONNX de 21 MB, que roda offline num único
 núcleo de CPU, mais de 30 vezes mais rápido que o tempo real, sem GPU. Ele
@@ -98,15 +100,15 @@ run for this release.
 
 ```bash
 sudo apt install espeak-ng python3-venv   # Ubuntu 24.04 has eSpeak NG 1.51, the version used in training
-git clone https://github.com/Haple/tiny-voca-ptbr.git
-cd tiny-voca-ptbr
+git clone https://github.com/Haple/tiny-voca-ptbr-kokoro.git
+cd tiny-voca-ptbr-kokoro
 python3 -m venv .venv && . .venv/bin/activate
 pip install -r requirements.txt
 python speak.py --text "Oi! Tudo bem? O café custa R$ 7,50." --voice F --output oi.wav
 ```
 
 The same files are on Hugging Face:
-`hf download HF_USER/tiny-voca-ptbr --local-dir tiny-voca-ptbr`.
+`hf download Haple/tiny-voca-ptbr-kokoro --local-dir tiny-voca-ptbr-kokoro`.
 
 | Option | Default | Meaning |
 |---|---|---|
@@ -233,9 +235,8 @@ not predict the listener's choice.
 - **Synthetic teacher.** The model never heard a person. It copies Kokoro's
   accent and mistakes and cannot sound better than Kokoro.
 - Two fixed voices, no voice cloning, no streaming.
-- No in-browser version. The phonemizer is the eSpeak NG program, so a
-  browser would need eSpeak compiled to WebAssembly; the demo Space runs the
-  model on a server CPU instead.
+- No in-browser version and no live demo yet. The phonemizer is the eSpeak NG
+  program, so a browser would need eSpeak compiled to WebAssembly.
 - Small evaluation sets (8 to 32 clips per group).
 
 ## Files
