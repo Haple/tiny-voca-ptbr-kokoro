@@ -1,0 +1,148 @@
+{
+ "what": "6 showcase texts x 2 voices from eval/final_samples.json, ONNX model, 1 CPU thread, phonemization included, after one warm-up call",
+ "machine": {
+  "cpu": "AMD EPYC 9354P 32-Core Processor",
+  "logical_cpus": 4,
+  "python": "3.12.3",
+  "onnxruntime": "1.32.0",
+  "numpy": "2.5.5",
+  "espeak": "eSpeak NG text-to-speech: 1.51  Data at: /usr/lib/x86_64-linux-gnu/espeak-ng-data"
+ },
+ "audio_seconds": 84.15,
+ "compute_seconds_per_pass": [
+  2.444,
+  2.389,
+  2.542
+ ],
+ "times_faster_than_real_time_per_pass": [
+  34.4,
+  35.2,
+  33.1
+ ],
+ "median_times_faster_than_real_time": 34.4,
+ "pod_onnx_reference": {
+  "audio_seconds": 84.1,
+  "compute_seconds_1cpu": 2.71,
+  "times_faster_than_real_time": 31.0,
+  "mean_wer": 0.128
+ },
+ "same_length_as_pod": "12 of 12",
+ "audio_check_note": "the ONNX graph draws fresh Gaussian noise for the hiss branch on every call (RandomNormalLike), so sample values differ from run to run; durations, pitch and filters are deterministic. Compare the spectral difference against the pod with the run-to-run difference on this machine.",
+ "median_spectral_difference_db_vs_pod": 2.93,
+ "median_spectral_difference_db_run_to_run": 2.92,
+ "audio_checks": [
+  {
+   "id": "ola-F-onnx",
+   "samples": 148992,
+   "pod_samples": 148992,
+   "same_length": true,
+   "spectral_difference_db_vs_pod": 3.32,
+   "spectral_difference_db_run_to_run": 3.31
+  },
+  {
+   "id": "ola-M-onnx",
+   "samples": 150016,
+   "pod_samples": 150016,
+   "same_length": true,
+   "spectral_difference_db_vs_pod": 2.53,
+   "spectral_difference_db_run_to_run": 2.52
+  },
+  {
+   "id": "data-F-onnx",
+   "samples": 156928,
+   "pod_samples": 156928,
+   "same_length": true,
+   "spectral_difference_db_vs_pod": 2.94,
+   "spectral_difference_db_run_to_run": 2.93
+  },
+  {
+   "id": "data-M-onnx",
+   "samples": 158464,
+   "pod_samples": 158464,
+   "same_length": true,
+   "spectral_difference_db_vs_pod": 2.16,
+   "spectral_difference_db_run_to_run": 2.17
+  },
+  {
+   "id": "preco-F-onnx",
+   "samples": 143104,
+   "pod_samples": 143104,
+   "same_length": true,
+   "spectral_difference_db_vs_pod": 2.92,
+   "spectral_difference_db_run_to_run": 2.91
+  },
+  {
+   "id": "preco-M-onnx",
+   "samples": 142592,
+   "pod_samples": 142592,
+   "same_length": true,
+   "spectral_difference_db_vs_pod": 2.11,
+   "spectral_difference_db_run_to_run": 2.11
+  },
+  {
+   "id": "telefone-F-onnx",
+   "samples": 154880,
+   "pod_samples": 154880,
+   "same_length": true,
+   "spectral_difference_db_vs_pod": 3.02,
+   "spectral_difference_db_run_to_run": 3.02
+  },
+  {
+   "id": "telefone-M-onnx",
+   "samples": 153600,
+   "pod_samples": 153600,
+   "same_length": true,
+   "spectral_difference_db_vs_pod": 2.16,
+   "spectral_difference_db_run_to_run": 2.15
+  },
+  {
+   "id": "historia-F-onnx",
+   "samples": 293376,
+   "pod_samples": 293376,
+   "same_length": true,
+   "spectral_difference_db_vs_pod": 3.45,
+   "spectral_difference_db_run_to_run": 3.45
+  },
+  {
+   "id": "historia-M-onnx",
+   "samples": 289024,
+   "pod_samples": 289024,
+   "same_length": true,
+   "spectral_difference_db_vs_pod": 2.63,
+   "spectral_difference_db_run_to_run": 2.64
+  },
+  {
+   "id": "pergunta-F-onnx",
+   "samples": 115456,
+   "pod_samples": 115456,
+   "same_length": true,
+   "spectral_difference_db_vs_pod": 4.51,
+   "spectral_difference_db_run_to_run": 4.5
+  },
+  {
+   "id": "pergunta-M-onnx",
+   "samples": 113152,
+   "pod_samples": 113152,
+   "same_length": true,
+   "spectral_difference_db_vs_pod": 4.01,
+   "spectral_difference_db_run_to_run": 4.01
+  }
+ ],
+ "bandwidth": {
+  "note": "share of spectral energy above 10 kHz (Hann 2048, hop 1024); reference = teacher (Kokoro) clips, generated = this model, from the training run's eval/audio",
+  "reference": {
+   "clips": 24,
+   "median_energy_fraction_above_10khz": 0.00035071388458250165,
+   "max_energy_fraction_above_10khz": 0.0014672370365854696
+  },
+  "generated": {
+   "clips": 24,
+   "median_energy_fraction_above_10khz": 0.0003255326665447103,
+   "max_energy_fraction_above_10khz": 0.0014269033369814347
+  },
+  "samples_in_this_repo": {
+   "clips": 4,
+   "median_energy_fraction_above_10khz": 0.0005410994169596454
+  }
+ }
+}

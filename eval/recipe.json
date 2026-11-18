@@ -1,0 +1,41 @@
+{
+  "batch_frames": 9000,
+  "max_batch": 32,
+  "learning_rate": 0.0003,
+  "warmup": 1000,
+  "lr_half_life": 100000,
+  "grad_clip": 10.0,
+  "gan_start": 8000,
+  "gan_ratio": 0.7,
+  "gan_ramp": 3000,
+  "feature_matching": 30.0,
+  "gan_scale_max": 2000.0,
+  "crop_samples": 8192,
+  "crops": 2,
+  "teacher_hold": 3000,
+  "teacher_ramp": 7000,
+  "teacher_final": 0.0,
+  "subset": null,
+  "validation_size": 32,
+  "seed": 20261113,
+  "voiced_vowel_targets": true,
+  "weights": {
+    "duration": 1.0,
+    "pause": 1.0,
+    "pitch": 2.0,
+    "pitch_spread": 2.0,
+    "voicing": 1.0,
+    "energy": 1.0,
+    "mel_head": 2.0,
+    "stft": 2.0,
+    "mel": 10.0
+  },
+  "branched_from": null,
+  "annotation": "0fdb01eae3f71ddf16ab76865a549ff792b74d8679caadf31fa63a95c7ade73c",
+  "frontend": "8fcf234a3759b90b7f8b3c399c6632a22a6bb3d50ce290636b3ab80936d09dee",
+  "train_utterances": 15539,
+  "datasets": [
+    "964c531040e17b02683b4c39eef78fae37e47795931a2f048c93075e8a4e1f39",
+    "5c592519832f1b884c4f0a93dc9b8eb09e8993d0e159780735cb88948ffd30ea"
+  ]
+}

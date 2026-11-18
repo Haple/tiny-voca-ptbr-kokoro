@@ -1,0 +1,294 @@
+{
+ "summary": {
+  "torch": {
+   "audio_seconds": 84.1,
+   "compute_seconds_1cpu": 2.94,
+   "times_faster_than_real_time": 28.6,
+   "mean_wer": 0.128
+  },
+  "onnx": {
+   "audio_seconds": 84.1,
+   "compute_seconds_1cpu": 2.71,
+   "times_faster_than_real_time": 31.0,
+   "mean_wer": 0.128
+  }
+ },
+ "rows": [
+  {
+   "id": "ola-F",
+   "engine": "torch",
+   "voice": "F",
+   "text": "Oi! Eu sou uma voz pequenininha, feita para falar português do Brasil sem precisar de internet.",
+   "file": "ola-F.wav",
+   "audio_seconds": 6.21,
+   "compute_seconds_1cpu": 0.25,
+   "phonemes": "<bos> oɪ ! <eos> | <bos> eʊ <sp> s o w <sp> u m æ <sp> v ɔ s <sp> p e k e n i n i ɲ æ , f eɪ t æ <sp> p a ɾ æ <sp> f a l a r <sp> p o ɾ ə t u ɡ e z <sp> d ʊ <sp> b r a z iʊ <sp> s eɪ ŋ <sp> p r e s i z a r <sp> dʒ j <sp> i ŋ t e ɾ ə n ɛ tʃ . <eos>",
+   "whisper": "Oi, eu sou uma voz pequenininha, feita para falar português do Brasil sem precisar de internet.",
+   "wer": 0.0
+  },
+  {
+   "id": "ola-M",
+   "engine": "torch",
+   "voice": "M",
+   "text": "Oi! Eu sou uma voz pequenininha, feita para falar português do Brasil sem precisar de internet.",
+   "file": "ola-M.wav",
+   "audio_seconds": 6.25,
+   "compute_seconds_1cpu": 0.252,
+   "phonemes": "<bos> oɪ ! <eos> | <bos> eʊ <sp> s o w <sp> u m æ <sp> v ɔ s <sp> p e k e n i n i ɲ æ , f eɪ t æ <sp> p a ɾ æ <sp> f a l a r <sp> p o ɾ ə t u ɡ e z <sp> d ʊ <sp> b r a z iʊ <sp> s eɪ ŋ <sp> p r e s i z a r <sp> dʒ j <sp> i ŋ t e ɾ ə n ɛ tʃ . <eos>",
+   "whisper": "Pois, eu sou uma voz pequenininha feita para falar português do Brasil sem precisar de internet.",
+   "wer": 0.0625
+  },
+  {
+   "id": "data-F",
+   "engine": "torch",
+   "voice": "F",
+   "text": "Hoje é terça-feira, 17 de novembro de 2026, e faz 24 graus em São Paulo.",
+   "file": "data-F.wav",
+   "audio_seconds": 6.54,
+   "compute_seconds_1cpu": 0.258,
+   "phonemes": "<bos> o ʒ j <sp> ɛ <sp> t e ɾ ə s æ f eɪ ɾ æ , d e z e s ɛ tʃ y <sp> dʒ y <sp> n o v eɪ m b r ʊ <sp> dʒ y <sp> d oɪ z <sp> m iʊ <sp> i <sp> v i ŋ tʃ j <sp> i <sp> s eɪ s , i <sp> f a z <sp> v i ŋ tʃ j <sp> i <sp> k w a t r ʊ <sp> ɡ r aʊ z <sp> eɪ ŋ <sp> s ɐ̃ʊ̃ <sp> p aʊ l ʊ . <eos>",
+   "whisper": "Hoje é terça-feira, 17 de novembro de 2026, e faz 24 graus em São Paulo.",
+   "wer": 0.0
+  },
+  {
+   "id": "data-M",
+   "engine": "torch",
+   "voice": "M",
+   "text": "Hoje é terça-feira, 17 de novembro de 2026, e faz 24 graus em São Paulo.",
+   "file": "data-M.wav",
+   "audio_seconds": 6.6,
+   "compute_seconds_1cpu": 0.235,
+   "phonemes": "<bos> o ʒ j <sp> ɛ <sp> t e ɾ ə s æ f eɪ ɾ æ , d e z e s ɛ tʃ y <sp> dʒ y <sp> n o v eɪ m b r ʊ <sp> dʒ y <sp> d oɪ z <sp> m iʊ <sp> i <sp> v i ŋ tʃ j <sp> i <sp> s eɪ s , i <sp> f a z <sp> v i ŋ tʃ j <sp> i <sp> k w a t r ʊ <sp> ɡ r aʊ z <sp> eɪ ŋ <sp> s ɐ̃ʊ̃ <sp> p aʊ l ʊ . <eos>",
+   "whisper": "Hoje é terça-feira, 17 de novembro de 2026 e faz 24 graus em São Paulo.",
+   "wer": 0.0
+  },
+  {
+   "id": "preco-F",
+   "engine": "torch",
+   "voice": "F",
+   "text": "O ingresso custa R$ 49,90 e o show começa às 21h30.",
+   "file": "preco-F.wav",
+   "audio_seconds": 5.96,
+   "compute_seconds_1cpu": 0.189,
+   "phonemes": "<bos> u <sp> i ŋ ɡ r ɛ s ʊ <sp> k u s t æ <sp> k w a ɾ eɪ ŋ t æ <sp> i <sp> n ɔ v y <sp> x e aɪ z <sp> i <sp> n o v eɪ ŋ t æ <sp> s eɪ ŋ t a v ʊ z <sp> i <sp> ʊ <sp> ʃ o w <sp> k o m ɛ s <sp> aː z <sp> v i ŋ tʃ j <sp> i <sp> u m æ <sp> i <sp> m eɪ æ . <eos>",
+   "whisper": "O ingresso custa R$ 49,90 e o show começa às 21h30.",
+   "wer": 0.0
+  },
+  {
+   "id": "preco-M",
+   "engine": "torch",
+   "voice": "M",
+   "text": "O ingresso custa R$ 49,90 e o show começa às 21h30.",
+   "file": "preco-M.wav",
+   "audio_seconds": 5.94,
+   "compute_seconds_1cpu": 0.157,
+   "phonemes": "<bos> u <sp> i ŋ ɡ r ɛ s ʊ <sp> k u s t æ <sp> k w a ɾ eɪ ŋ t æ <sp> i <sp> n ɔ v y <sp> x e aɪ z <sp> i <sp> n o v eɪ ŋ t æ <sp> s eɪ ŋ t a v ʊ z <sp> i <sp> ʊ <sp> ʃ o w <sp> k o m ɛ s <sp> aː z <sp> v i ŋ tʃ j <sp> i <sp> u m æ <sp> i <sp> m eɪ æ . <eos>",
+   "whisper": "O ingresso custa R$ 49,90 e o show começa às 21h30.",
+   "wer": 0.0
+  },
+  {
+   "id": "telefone-F",
+   "engine": "torch",
+   "voice": "F",
+   "text": "Se precisar, me liga no (11) 98765-4321 depois das 18h.",
+   "file": "telefone-F.wav",
+   "audio_seconds": 6.45,
+   "compute_seconds_1cpu": 0.231,
+   "phonemes": "<bos> s y <sp> p r e s i z a r , m y <sp> l i ɡ æ <sp> n ʊ <sp> o ŋ z y , n ɔ v j <sp> oɪ t ʊ <sp> s ɛ tʃ y <sp> s eɪ s <sp> s i ŋ k ʊ , k w a t r ʊ <sp> t r e z <sp> d oɪ z <sp> ũ ŋ <sp> d e p oɪ z <sp> d a z <sp> d e z oɪ t w <sp> ɔ ɾ æ s . <eos>",
+   "whisper": "Se precisar, me liga no 11 987654321 depois das 18 horas.",
+   "wer": 0.7368
+  },
+  {
+   "id": "telefone-M",
+   "engine": "torch",
+   "voice": "M",
+   "text": "Se precisar, me liga no (11) 98765-4321 depois das 18h.",
+   "file": "telefone-M.wav",
+   "audio_seconds": 6.4,
+   "compute_seconds_1cpu": 0.233,
+   "phonemes": "<bos> s y <sp> p r e s i z a r , m y <sp> l i ɡ æ <sp> n ʊ <sp> o ŋ z y , n ɔ v j <sp> oɪ t ʊ <sp> s ɛ tʃ y <sp> s eɪ s <sp> s i ŋ k ʊ , k w a t r ʊ <sp> t r e z <sp> d oɪ z <sp> ũ ŋ <sp> d e p oɪ z <sp> d a z <sp> d e z oɪ t w <sp> ɔ ɾ æ s . <eos>",
+   "whisper": "Se precisar, me liga no 11 987654321 depois das 18 horas.",
+   "wer": 0.7368
+  },
+  {
+   "id": "historia-F",
+   "engine": "torch",
+   "voice": "F",
+   "text": "Era uma vez uma menina que morava perto do mar. Todas as manhãs, ela descia até a praia para ver os barcos dos pescadores voltando. Um dia, encontrou na areia uma garrafa com um bilhete dentro.",
+   "file": "historia-F.wav",
+   "audio_seconds": 12.22,
+   "compute_seconds_1cpu": 0.37,
+   "phonemes": "<bos> ɛ ɾ æ <sp> u m æ <sp> v e z <sp> u m æ <sp> m e n i n æ <sp> k y <sp> m o ɾ a v æ <sp> p ɛ ɾ ə t ʊ <sp> d ʊ <sp> m a r . <eos> | <bos> t o d æ z <sp> a z <sp> m ɐ̃ ɲ ɐ̃ s , ɛ l æ <sp> d e s i æ <sp> a t ɛ <sp> a <sp> p r aɪ æ <sp> p a ɾ æ <sp> v e ɾ <sp> ʊ z <sp> b a ɾ ə k ʊ z <sp> d ʊ s <sp> p e s k a d o ɾ y z <sp> v o w t ɐ̃ ŋ d ʊ . <eos> | <bos> ũ ŋ <sp> dʒ i æ , eɪ ŋ k o ŋ t r o w <sp> n a <sp> a ɾ eɪ æ <sp> u m æ <sp> ɡ a x a f æ <sp> k o ŋ <sp> ũ ŋ <sp> b i l j e tʃ y <sp> d eɪ ŋ t r ʊ . <eos>",
+   "whisper": "Era uma vez uma menina que morava perto do mar. Todas as manhãs, ela descia até a praia para ver os barcos dos pescadores voltando. Um dia, encontrou na areia uma garrafa com um bilhete dentro.",
+   "wer": 0.0
+  },
+  {
+   "id": "historia-M",
+   "engine": "torch",
+   "voice": "M",
+   "text": "Era uma vez uma menina que morava perto do mar. Todas as manhãs, ela descia até a praia para ver os barcos dos pescadores voltando. Um dia, encontrou na areia uma garrafa com um bilhete dentro.",
+   "file": "historia-M.wav",
+   "audio_seconds": 12.04,
+   "compute_seconds_1cpu": 0.366,
+   "phonemes": "<bos> ɛ ɾ æ <sp> u m æ <sp> v e z <sp> u m æ <sp> m e n i n æ <sp> k y <sp> m o ɾ a v æ <sp> p ɛ ɾ ə t ʊ <sp> d ʊ <sp> m a r . <eos> | <bos> t o d æ z <sp> a z <sp> m ɐ̃ ɲ ɐ̃ s , ɛ l æ <sp> d e s i æ <sp> a t ɛ <sp> a <sp> p r aɪ æ <sp> p a ɾ æ <sp> v e ɾ <sp> ʊ z <sp> b a ɾ ə k ʊ z <sp> d ʊ s <sp> p e s k a d o ɾ y z <sp> v o w t ɐ̃ ŋ d ʊ . <eos> | <bos> ũ ŋ <sp> dʒ i æ , eɪ ŋ k o ŋ t r o w <sp> n a <sp> a ɾ eɪ æ <sp> u m æ <sp> ɡ a x a f æ <sp> k o ŋ <sp> ũ ŋ <sp> b i l j e tʃ y <sp> d eɪ ŋ t r ʊ . <eos>",
+   "whisper": "Era uma vez uma menina que morava perto do mar. Todas as manhãs, ela descia até a praia para ver os barcos dos pescadores voltando. Um dia, encontrou na areia uma garrafa com um bilhete dentro.",
+   "wer": 0.0
+  },
+  {
+   "id": "pergunta-F",
+   "engine": "torch",
+   "voice": "F",
+   "text": "Sério? Você já terminou tudo? Que maravilha, parabéns!",
+   "file": "pergunta-F.wav",
+   "audio_seconds": 4.81,
+   "compute_seconds_1cpu": 0.199,
+   "phonemes": "<bos> s ɛ ɾ j ʊ ? <eos> | <bos> v o s e <sp> ʒ a <sp> t e ɾ ə m i n o w <sp> t u d ʊ ? <eos> | <bos> k y <sp> m a ɾ a v i l j æ , p a ɾ a b eɪ ŋ s ! <eos>",
+   "whisper": "Sério? Você já terminou tudo. Que maravilha parabéns.",
+   "wer": 0.0
+  },
+  {
+   "id": "pergunta-M",
+   "engine": "torch",
+   "voice": "M",
+   "text": "Sério? Você já terminou tudo? Que maravilha, parabéns!",
+   "file": "pergunta-M.wav",
+   "audio_seconds": 4.71,
+   "compute_seconds_1cpu": 0.2,
+   "phonemes": "<bos> s ɛ ɾ j ʊ ? <eos> | <bos> v o s e <sp> ʒ a <sp> t e ɾ ə m i n o w <sp> t u d ʊ ? <eos> | <bos> k y <sp> m a ɾ a v i l j æ , p a ɾ a b eɪ ŋ s ! <eos>",
+   "whisper": "Sério, você já terminou tudo. Que maravilha, parabéns.",
+   "wer": 0.0
+  },
+  {
+   "id": "ola-F-onnx",
+   "engine": "onnx",
+   "voice": "F",
+   "text": "Oi! Eu sou uma voz pequenininha, feita para falar português do Brasil sem precisar de internet.",
+   "file": "ola-F-onnx.wav",
+   "audio_seconds": 6.21,
+   "compute_seconds_1cpu": 0.212,
+   "whisper": "Oi, eu sou uma voz pequenininha, feita para falar português do Brasil sem precisar de internet.",
+   "wer": 0.0
+  },
+  {
+   "id": "ola-M-onnx",
+   "engine": "onnx",
+   "voice": "M",
+   "text": "Oi! Eu sou uma voz pequenininha, feita para falar português do Brasil sem precisar de internet.",
+   "file": "ola-M-onnx.wav",
+   "audio_seconds": 6.25,
+   "compute_seconds_1cpu": 0.203,
+   "whisper": "Pois, eu sou uma voz pequenininha feita para falar português do Brasil sem precisar de internet.",
+   "wer": 0.0625
+  },
+  {
+   "id": "data-F-onnx",
+   "engine": "onnx",
+   "voice": "F",
+   "text": "Hoje é terça-feira, 17 de novembro de 2026, e faz 24 graus em São Paulo.",
+   "file": "data-F-onnx.wav",
+   "audio_seconds": 6.54,
+   "compute_seconds_1cpu": 0.213,
+   "whisper": "Hoje é terça-feira, 17 de novembro de 2026, e faz 24 graus em São Paulo.",
+   "wer": 0.0
+  },
+  {
+   "id": "data-M-onnx",
+   "engine": "onnx",
+   "voice": "M",
+   "text": "Hoje é terça-feira, 17 de novembro de 2026, e faz 24 graus em São Paulo.",
+   "file": "data-M-onnx.wav",
+   "audio_seconds": 6.6,
+   "compute_seconds_1cpu": 0.217,
+   "whisper": "Hoje é terça-feira, 17 de novembro de 2026 e faz 24 graus em São Paulo.",
+   "wer": 0.0
+  },
+  {
+   "id": "preco-F-onnx",
+   "engine": "onnx",
+   "voice": "F",
+   "text": "O ingresso custa R$ 49,90 e o show começa às 21h30.",
+   "file": "preco-F-onnx.wav",
+   "audio_seconds": 5.96,
+   "compute_seconds_1cpu": 0.149,
+   "whisper": "O ingresso custa R$ 49,90 e o show começa às 21h30.",
+   "wer": 0.0
+  },
+  {
+   "id": "preco-M-onnx",
+   "engine": "onnx",
+   "voice": "M",
+   "text": "O ingresso custa R$ 49,90 e o show começa às 21h30.",
+   "file": "preco-M-onnx.wav",
+   "audio_seconds": 5.94,
+   "compute_seconds_1cpu": 0.149,
+   "whisper": "O ingresso custa R$ 49,90 e o show começa às 21h30.",
+   "wer": 0.0
+  },
+  {
+   "id": "telefone-F-onnx",
+   "engine": "onnx",
+   "voice": "F",
+   "text": "Se precisar, me liga no (11) 98765-4321 depois das 18h.",
+   "file": "telefone-F-onnx.wav",
+   "audio_seconds": 6.45,
+   "compute_seconds_1cpu": 0.237,
+   "whisper": "Se precisar, me liga no 11 987654321 depois das 18 horas.",
+   "wer": 0.7368
+  },
+  {
+   "id": "telefone-M-onnx",
+   "engine": "onnx",
+   "voice": "M",
+   "text": "Se precisar, me liga no (11) 98765-4321 depois das 18h.",
+   "file": "telefone-M-onnx.wav",
+   "audio_seconds": 6.4,
+   "compute_seconds_1cpu": 0.232,
+   "whisper": "Se precisar, me liga no 11 987654321 depois das 18 horas.",
+   "wer": 0.7368
+  },
+  {
+   "id": "historia-F-onnx",
+   "engine": "onnx",
+   "voice": "F",
+   "text": "Era uma vez uma menina que morava perto do mar. Todas as manhãs, ela descia até a praia para ver os barcos dos pescadores voltando. Um dia, encontrou na areia uma garrafa com um bilhete dentro.",
+   "file": "historia-F-onnx.wav",
+   "audio_seconds": 12.22,
+   "compute_seconds_1cpu": 0.364,
+   "whisper": "Era uma vez uma menina que morava perto do mar. Todas as manhãs, ela descia até a praia para ver os barcos dos pescadores voltando. Um dia, encontrou na areia uma garrafa com um bilhete dentro.",
+   "wer": 0.0
+  },
+  {
+   "id": "historia-M-onnx",
+   "engine": "onnx",
+   "voice": "M",
+   "text": "Era uma vez uma menina que morava perto do mar. Todas as manhãs, ela descia até a praia para ver os barcos dos pescadores voltando. Um dia, encontrou na areia uma garrafa com um bilhete dentro.",
+   "file": "historia-M-onnx.wav",
+   "audio_seconds": 12.04,
+   "compute_seconds_1cpu": 0.361,
+   "whisper": "Era uma vez uma menina que morava perto do mar. Todas as manhãs, ela descia até a praia para ver os barcos dos pescadores voltando. Um dia, encontrou na areia uma garrafa com um bilhete dentro.",
+   "wer": 0.0
+  },
+  {
+   "id": "pergunta-F-onnx",
+   "engine": "onnx",
+   "voice": "F",
+   "text": "Sério? Você já terminou tudo? Que maravilha, parabéns!",
+   "file": "pergunta-F-onnx.wav",
+   "audio_seconds": 4.81,
+   "compute_seconds_1cpu": 0.193,
+   "whisper": "Sério? Você já terminou tudo. Que maravilha parabéns.",
+   "wer": 0.0
+  },
+  {
+   "id": "pergunta-M-onnx",
+   "engine": "onnx",
+   "voice": "M",
+   "text": "Sério? Você já terminou tudo? Que maravilha, parabéns!",
+   "file": "pergunta-M-onnx.wav",
+   "audio_seconds": 4.71,
+   "compute_seconds_1cpu": 0.184,
+   "whisper": "Sério, você já terminou tudo. Que maravilha, parabéns.",
+   "wer": 0.0
+  }
+ ]
+}

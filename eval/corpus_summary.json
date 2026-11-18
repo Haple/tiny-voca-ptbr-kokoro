@@ -1,0 +1,52 @@
+{
+ "what": "counts from the training sentence list (ptbr/data/scripts.jsonl of the training repo); the sentences themselves are not in this repository",
+ "sentences": 8945,
+ "words": 81704,
+ "by_origin": {
+  "common_voice_sentence_collector": {
+   "sentences": 3600,
+   "license_recorded": "CC0-1.0"
+  },
+  "llm_informative": {
+   "sentences": 1225,
+   "license_recorded": "CC-BY-4.0 (written for this project)"
+  },
+  "llm_everyday": {
+   "sentences": 1146,
+   "license_recorded": "CC-BY-4.0 (written for this project)"
+  },
+  "llm_dialogue": {
+   "sentences": 1041,
+   "license_recorded": "CC-BY-4.0 (written for this project)"
+  },
+  "llm_narration": {
+   "sentences": 1033,
+   "license_recorded": "CC-BY-4.0 (written for this project)"
+  },
+  "template": {
+   "sentences": 900,
+   "license_recorded": "Apache-2.0"
+  }
+ },
+ "by_split": {
+  "train": 8322,
+  "validation": 357,
+  "test": 266
+ },
+ "by_category": {
+  "statement": 5475,
+  "question": 1897,
+  "exclamation": 832,
+  "money": 164,
+  "date": 98,
+  "count": 96,
+  "time": 65,
+  "ordinal": 57,
+  "percent": 55,
+  "measure": 52,
+  "name": 48,
+  "address": 42,
+  "phone": 41,
+  "year": 23
+ }
+}

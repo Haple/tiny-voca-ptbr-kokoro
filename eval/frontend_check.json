@@ -1,0 +1,12 @@
+{
+ "what": "tokens of tiny_voca_ptbr/text.py vs the pt-BR front end the model was trained with (src/tiny_voca/text.py of the training repo), on 1,500 random training-corpus sentences, the 56 evaluation texts and 12 normalizer/edge cases; plus a rebuild of the phonemes recorded in eval/report.json",
+ "fingerprint_packaged": "8fcf234a3759b90b7f8b3c399c6632a22a6bb3d50ce290636b3ab80936d09dee",
+ "fingerprint_original": "8fcf234a3759b90b7f8b3c399c6632a22a6bb3d50ce290636b3ab80936d09dee",
+ "fingerprint_model": "8fcf234a3759b90b7f8b3c399c6632a22a6bb3d50ce290636b3ab80936d09dee",
+ "symbols_equal_model": true,
+ "espeak": "eSpeak NG text-to-speech: 1.51  Data at: /usr/lib/x86_64-linux-gnu/espeak-ng-data",
+ "texts_compared": 1568,
+ "mismatches": [],
+ "report_samples": 56,
+ "report_phoneme_mismatches": []
+}

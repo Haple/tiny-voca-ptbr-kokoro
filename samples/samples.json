@@ -1,0 +1,63 @@
+{
+ "made_with": "python speak.py --text <text> --voice <F|M> --phonemes --output samples/<file> (this repository, CPU, 1 thread)",
+ "machine": {
+  "cpu": "AMD EPYC 9354P 32-Core Processor",
+  "logical_cpus": 4,
+  "python": "3.12.3",
+  "onnxruntime": "1.32.0",
+  "numpy": "2.5.5",
+  "espeak": "eSpeak NG text-to-speech: 1.51  Data at: /usr/lib/x86_64-linux-gnu/espeak-ng-data"
+ },
+ "note": "speak.py's time includes the first model call of a new session; eval/vps_check.json measures warm speed",
+ "asr_check": "faster-whisper 1.2.1, model small, CPU int8, language pt, beam 5 (a much smaller model than the large-v3-turbo used in eval/report.json)",
+ "samples": [
+  {
+   "file": "bom-dia-F.wav",
+   "voice": "F",
+   "text": "Bom dia! A padaria da esquina abre às 6h30, então ainda dá tempo de comprar pão quentinho.",
+   "phonemes": [
+    "<bos> b o ŋ <sp> dʒ i æ ! <eos>",
+    "<bos> a <sp> p a d a ɾ i æ <sp> d a <sp> e s k i n æ <sp> a b r i <sp> aː s <sp> s eɪ z <sp> i <sp> m eɪ æ , eɪ ŋ t ɐ̃ʊ̃ <sp> a i ŋ d æ <sp> d a <sp> t eɪ m p ʊ <sp> dʒ y <sp> k o m p r a r <sp> p ɐ̃ʊ̃ <sp> k eɪ ŋ tʃ i ɲ ʊ . <eos>"
+   ],
+   "audio_seconds": 6.65,
+   "speak_py_output": "6.65 s of speech in 0.45 s on 1 CPU thread(s) -> samples/bom-dia-F.wav",
+   "asr_transcript": "Bom dia! A padaria da esquina abre a seis e meia, então ainda dá tempo de comprar pão quentinho."
+  },
+  {
+   "file": "bom-dia-M.wav",
+   "voice": "M",
+   "text": "Bom dia! A padaria da esquina abre às 6h30, então ainda dá tempo de comprar pão quentinho.",
+   "phonemes": [
+    "<bos> b o ŋ <sp> dʒ i æ ! <eos>",
+    "<bos> a <sp> p a d a ɾ i æ <sp> d a <sp> e s k i n æ <sp> a b r i <sp> aː s <sp> s eɪ z <sp> i <sp> m eɪ æ , eɪ ŋ t ɐ̃ʊ̃ <sp> a i ŋ d æ <sp> d a <sp> t eɪ m p ʊ <sp> dʒ y <sp> k o m p r a r <sp> p ɐ̃ʊ̃ <sp> k eɪ ŋ tʃ i ɲ ʊ . <eos>"
+   ],
+   "audio_seconds": 6.44,
+   "speak_py_output": "6.44 s of speech in 0.32 s on 1 CPU thread(s) -> samples/bom-dia-M.wav",
+   "asr_transcript": "Bom dia! A padaria da esquina abre a seis e meia, então ainda dá tempo de comprar pão quentinho."
+  },
+  {
+   "file": "conserto-F.wav",
+   "voice": "F",
+   "text": "Você viu que o conserto do carro ficou em R$ 350? O mecânico disse que a peça só chega na quarta-feira.",
+   "phonemes": [
+    "<bos> v o s e <sp> v iʊ <sp> k y <sp> ʊ <sp> k o ŋ s ɛ ɾ ə t ʊ <sp> d ʊ <sp> k a x ʊ <sp> f i k o w <sp> eɪ ŋ <sp> t r e z eɪ ŋ t ʊ z <sp> i <sp> s i ŋ k w eɪ ŋ t æ <sp> x e aɪ s ? <eos>",
+    "<bos> ʊ <sp> m e k ɐ̃ n i k ʊ <sp> dʒ i s y <sp> k y <sp> a <sp> p ɛ s æ <sp> s ɔ <sp> ʃ e ɡ æ <sp> n a <sp> k w a ɾ ə t æ f eɪ ɾ æ . <eos>"
+   ],
+   "audio_seconds": 7.83,
+   "speak_py_output": "7.83 s of speech in 0.31 s on 1 CPU thread(s) -> samples/conserto-F.wav",
+   "asr_transcript": "Você viu que o concerto do carro ficou em R$ 350. O mecânico disse que a peça só chega na quarta-feira."
+  },
+  {
+   "file": "conserto-M.wav",
+   "voice": "M",
+   "text": "Você viu que o conserto do carro ficou em R$ 350? O mecânico disse que a peça só chega na quarta-feira.",
+   "phonemes": [
+    "<bos> v o s e <sp> v iʊ <sp> k y <sp> ʊ <sp> k o ŋ s ɛ ɾ ə t ʊ <sp> d ʊ <sp> k a x ʊ <sp> f i k o w <sp> eɪ ŋ <sp> t r e z eɪ ŋ t ʊ z <sp> i <sp> s i ŋ k w eɪ ŋ t æ <sp> x e aɪ s ? <eos>",
+    "<bos> ʊ <sp> m e k ɐ̃ n i k ʊ <sp> dʒ i s y <sp> k y <sp> a <sp> p ɛ s æ <sp> s ɔ <sp> ʃ e ɡ æ <sp> n a <sp> k w a ɾ ə t æ f eɪ ɾ æ . <eos>"
+   ],
+   "audio_seconds": 7.98,
+   "speak_py_output": "7.98 s of speech in 0.21 s on 1 CPU thread(s) -> samples/conserto-M.wav",
+   "asr_transcript": "Você viu que o concerto do carro ficou em R$ 350. O mecânico disse que a peça só chega na quarta-feira."
+  }
+ ]
+}

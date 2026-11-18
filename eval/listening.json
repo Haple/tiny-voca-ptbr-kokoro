@@ -1,0 +1,74 @@
+{
+ "listener": "Aleph Santos (Brazilian Portuguese speaker, the project's author); one listener, not a MOS study",
+ "final_review": {
+  "date": "2026-11-17",
+  "scale": "1-5 stars",
+  "woman_F": 4,
+  "man_M": 4
+ },
+ "blind_ab_vs_magpie_variant": {
+  "date": "2026-11-18",
+  "setup": "6 sentences from a game-coaching app (3 per voice), both versions with the app's pronunciation lexicon applied; each pair as A/B in random order. The card named the two systems and their word error rates, but not which audio was which. 'Igual' = same",
+  "tally": {
+   "this model": 4,
+   "magpie variant": 0,
+   "same": 2
+  },
+  "rows": [
+   {
+    "n": 1,
+    "voice": "F",
+    "text": "Aos catorze minutos, o Jhin caiu da partida, e o seu time perdeu a condição de vitória.",
+    "A": "this model",
+    "B": "magpie variant",
+    "answer": "Igual",
+    "preferred": "same"
+   },
+   {
+    "n": 2,
+    "voice": "F",
+    "text": "Guarde a sua ultimate para quando o Ekko e a Ahri estiverem sem Flash.",
+    "A": "magpie variant",
+    "B": "this model",
+    "answer": "B",
+    "preferred": "this model"
+   },
+   {
+    "n": 3,
+    "voice": "F",
+    "text": "Você jogou muito bem no começo, mas precisa voltar para a base antes de acumular tanto ouro.",
+    "A": "this model",
+    "B": "magpie variant",
+    "answer": "A",
+    "preferred": "this model"
+   },
+   {
+    "n": 4,
+    "voice": "M",
+    "text": "O Nunu acertou o Biggest Snowball Ever na Yunara e na Lulu, e vocês garantiram o Dragão Infernal.",
+    "A": "magpie variant",
+    "B": "this model",
+    "answer": "Igual",
+    "preferred": "same"
+   },
+   {
+    "n": 5,
+    "voice": "M",
+    "text": "Compre Infinity Edge antes de forçar a luta no Rift Herald.",
+    "A": "magpie variant",
+    "B": "this model",
+    "answer": "B",
+    "preferred": "this model"
+   },
+   {
+    "n": 6,
+    "voice": "M",
+    "text": "Depois da queda da torre, a melhor jogada era girar para o meio com o seu caçador.",
+    "A": "magpie variant",
+    "B": "this model",
+    "answer": "B",
+    "preferred": "this model"
+   }
+  ]
+ }
+}

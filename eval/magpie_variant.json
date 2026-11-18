@@ -1,0 +1,133 @@
+{
+ "note": "not released; fine-tuned from this model's step-100,000 checkpoint on speech from NVIDIA Magpie TTS. Same evaluation code. The 'novel' group uses the same 16 new sentences as eval/report.json; its test and validation clips are a different sample, so only 'novel' is directly comparable.",
+ "voices": {
+  "F": {
+   "teacher": "magpie",
+   "speaker": "Sofia"
+  },
+  "M": {
+   "teacher": "magpie",
+   "speaker": "Leo"
+  }
+ },
+ "step": 160000,
+ "branched_from_step": 100000,
+ "train_utterances": 14531,
+ "asr_model": "faster-whisper large-v3-turbo",
+ "summary": {
+  "novel": {
+   "all": {
+    "samples": 32,
+    "generated_wer": 0.0114,
+    "reference_wer": null,
+    "duration_ratio": null,
+    "pause_ratio": null,
+    "mel_dtw": null,
+    "generated_pitch_std_semitones": 4.0669,
+    "reference_pitch_std_semitones": null,
+    "generated_voiced_fraction": 0.7912,
+    "reference_voiced_fraction": null
+   },
+   "F": {
+    "samples": 16,
+    "generated_wer": 0.0114,
+    "reference_wer": null,
+    "duration_ratio": null,
+    "pause_ratio": null,
+    "mel_dtw": null,
+    "generated_pitch_std_semitones": 3.5044,
+    "reference_pitch_std_semitones": null,
+    "generated_voiced_fraction": 0.7799,
+    "reference_voiced_fraction": null
+   },
+   "M": {
+    "samples": 16,
+    "generated_wer": 0.0114,
+    "reference_wer": null,
+    "duration_ratio": null,
+    "pause_ratio": null,
+    "mel_dtw": null,
+    "generated_pitch_std_semitones": 4.6294,
+    "reference_pitch_std_semitones": null,
+    "generated_voiced_fraction": 0.8024,
+    "reference_voiced_fraction": null
+   }
+  },
+  "test": {
+   "all": {
+    "samples": 8,
+    "generated_wer": 0.0357,
+    "reference_wer": 0.0179,
+    "duration_ratio": 0.963,
+    "pause_ratio": 0.8391,
+    "mel_dtw": 0.6319,
+    "generated_pitch_std_semitones": 3.7937,
+    "reference_pitch_std_semitones": 3.5275,
+    "generated_voiced_fraction": 0.7833,
+    "reference_voiced_fraction": 0.6944
+   },
+   "F": {
+    "samples": 4,
+    "generated_wer": 0.0,
+    "reference_wer": 0.0,
+    "duration_ratio": 0.9845,
+    "pause_ratio": 0.9247,
+    "mel_dtw": 0.6161,
+    "generated_pitch_std_semitones": 3.6225,
+    "reference_pitch_std_semitones": 3.865,
+    "generated_voiced_fraction": 0.7812,
+    "reference_voiced_fraction": 0.7568
+   },
+   "M": {
+    "samples": 4,
+    "generated_wer": 0.0714,
+    "reference_wer": 0.0357,
+    "duration_ratio": 0.9415,
+    "pause_ratio": 0.7535,
+    "mel_dtw": 0.6477,
+    "generated_pitch_std_semitones": 3.965,
+    "reference_pitch_std_semitones": 3.19,
+    "generated_voiced_fraction": 0.7853,
+    "reference_voiced_fraction": 0.632
+   }
+  },
+  "validation": {
+   "all": {
+    "samples": 8,
+    "generated_wer": 0.0078,
+    "reference_wer": 0.0078,
+    "duration_ratio": 0.9824,
+    "pause_ratio": 0.9454,
+    "mel_dtw": 0.6109,
+    "generated_pitch_std_semitones": 4.0987,
+    "reference_pitch_std_semitones": 3.585,
+    "generated_voiced_fraction": 0.814,
+    "reference_voiced_fraction": 0.7712
+   },
+   "F": {
+    "samples": 4,
+    "generated_wer": 0.0,
+    "reference_wer": 0.0,
+    "duration_ratio": 0.9857,
+    "pause_ratio": 0.719,
+    "mel_dtw": 0.6517,
+    "generated_pitch_std_semitones": 3.195,
+    "reference_pitch_std_semitones": 3.275,
+    "generated_voiced_fraction": 0.8145,
+    "reference_voiced_fraction": 0.779
+   },
+   "M": {
+    "samples": 4,
+    "generated_wer": 0.0156,
+    "reference_wer": 0.0156,
+    "duration_ratio": 0.979,
+    "pause_ratio": 1.1717,
+    "mel_dtw": 0.5701,
+    "generated_pitch_std_semitones": 5.0025,
+    "reference_pitch_std_semitones": 3.895,
+    "generated_voiced_fraction": 0.8135,
+    "reference_voiced_fraction": 0.7635
+   }
+  }
+ }
+}

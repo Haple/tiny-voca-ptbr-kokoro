@@ -1,0 +1,27 @@
+# Stage start/finish times (UTC) of the training run, from the "=== <stage> start/done" lines of
+# the pod logs (logs/<stage>.log of the training repo). One rented GPU on RunPod.
+#
+# 00:37:12  first training start, on a stricter annotation (14,641 clips); stopped after a few minutes
+# 00:39-00:44  annotation rerun with min_vowel_voiced 0.35 (15,539 training clips)
+# 00:44:48  training restarted from step 0
+# ~03:59    the container restarted on the host side; last logged step 68,150 at 11,632.8 s after the start
+#           (train_before_restart.log)
+# 04:10:48  training resumed from the step-68,000 checkpoint (exact resume: sampler and RNG state)
+# 05:55:14  step 100,000; evaluation and ONNX export until 06:01:05
+#
+setup.log: === setup start 2026-11-16T23:45:57Z
+setup.log: === setup done 2026-11-16T23:47:05Z
+gen.log: === gen start 2026-11-16T23:47:05Z
+gen.log: === gen done 2026-11-17T00:20:22Z
+prepare.log: === prepare start 2026-11-17T00:20:22Z
+prepare.log: === prepare done 2026-11-17T00:32:03Z
+annotate.log: === annotate start 2026-11-17T00:32:03Z
+annotate.log: === annotate done 2026-11-17T00:37:12Z
+annotate.log: === annotate start 2026-11-17T00:39:43Z
+annotate.log: === annotate done 2026-11-17T00:44:48Z
+train.log: === train start 2026-11-17T00:37:12Z
+train.log: === train start 2026-11-17T00:44:48Z
+train.log: === train start 2026-11-17T04:10:48Z
+train.log: === train done 2026-11-17T05:55:14Z
+eval.log: === eval start 2026-11-17T05:55:14Z
+eval.log: === eval done 2026-11-17T06:01:05Z
