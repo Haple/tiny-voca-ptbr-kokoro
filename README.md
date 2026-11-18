@@ -12,6 +12,11 @@ and eSpeak NG `pt-br` phonemes), a sentence corpus, and
 [Kokoro-82M](https://huggingface.co/hexgrad/Kokoro-82M) as the teacher that
 read it aloud. The model was trained from scratch on that synthetic speech.
 
+On Hugging Face: [the model](https://huggingface.co/HF_USER/tiny-voca-ptbr),
+with the samples playable on the page, and
+[a demo](https://huggingface.co/spaces/HF_USER/tiny-voca-ptbr-demo) where you
+can type a sentence and hear it (a free CPU Space).
+
 **Em português.** O tiny-voca pt-BR é um modelo pequeno de síntese de voz em
 português do Brasil, com duas vozes: uma mulher (F) e um homem (M). São 4,5
 milhões de parâmetros num arquivo ONNX de 21 MB, que roda offline num único
@@ -99,6 +104,9 @@ python3 -m venv .venv && . .venv/bin/activate
 pip install -r requirements.txt
 python speak.py --text "Oi! Tudo bem? O café custa R$ 7,50." --voice F --output oi.wav
 ```
+
+The same files are on Hugging Face:
+`hf download HF_USER/tiny-voca-ptbr --local-dir tiny-voca-ptbr`.
 
 | Option | Default | Meaning |
 |---|---|---|
@@ -223,8 +231,9 @@ not predict the listener's choice.
 - **Synthetic teacher.** The model never heard a person. It copies Kokoro's
   accent and mistakes and cannot sound better than Kokoro.
 - Two fixed voices, no voice cloning, no streaming.
-- No browser version here. The phonemizer is the eSpeak NG program; a
-  browser needs eSpeak compiled to WebAssembly.
+- No in-browser version. The phonemizer is the eSpeak NG program, so a
+  browser would need eSpeak compiled to WebAssembly; the demo Space runs the
+  model on a server CPU instead.
 - Small evaluation sets (8 to 32 clips per group).
 
 ## Files
@@ -237,6 +246,7 @@ not predict the listener's choice.
 | `model/SHA256SUMS` | Checksums |
 | `tiny_voca_ptbr/` | Normalizer, front end and ONNX runtime |
 | `speak.py` | Command-line tool |
+| `tests/` | Checks that the front end matches the model and that both voices speak |
 | `samples/` | The samples above |
 | `eval/` | Evaluation report, training logs and the checks behind the numbers in this file |
 
