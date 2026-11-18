@@ -1,0 +1,291 @@
+{
+ "what": "tokens from tiny_voca_ptbr/text.py with three eSpeak NG builds, on 9,013 texts: the 8,945 training-corpus sentences (train, validation and test), the 56 texts of eval/report.json and 12 normalizer and edge cases. The reference is the build the training data was phonemized with (eSpeak NG 1.51, eval/annotations.json); the Debian builds ran in debian:bookworm-slim and debian:trixie-slim containers.",
+ "reference": {
+  "os": "Ubuntu 24.04",
+  "package": "espeak-ng 1.51+dfsg-12build1",
+  "espeak": "eSpeak NG text-to-speech: 1.51  Data at: /usr/lib/x86_64-linux-gnu/espeak-ng-data",
+  "texts": 9013
+ },
+ "debian_12_bookworm": {
+  "os": "Debian GNU/Linux 12 (bookworm)",
+  "package": "espeak-ng 1.51+dfsg-10+deb12u2",
+  "espeak": "eSpeak NG text-to-speech: 1.51  Data at: /usr/lib/x86_64-linux-gnu/espeak-ng-data",
+  "texts_with_other_tokens": 0,
+  "texts_with_other_symbols": 0,
+  "most_common_symbol_changes": {},
+  "texts": []
+ },
+ "debian_13_trixie": {
+  "os": "Debian GNU/Linux 13 (trixie)",
+  "package": "espeak-ng 1.52.0+dfsg-5",
+  "espeak": "eSpeak NG text-to-speech: 1.52.0  Data at: /usr/lib/x86_64-linux-gnu/espeak-ng-data",
+  "texts_with_other_tokens": 42,
+  "texts_with_other_symbols": 20,
+  "most_common_symbol_changes": {
+   "e -> ɛ": 7,
+   "o -> ɔ": 4,
+   "i -> j": 4,
+   "iʊ -> j ʊ": 2,
+   "i -> aɪ": 1,
+   "æ n -> ɐ̃ ŋ": 1,
+   "r -> ɾ ə": 1,
+   "i t s -> y": 1,
+   " -> i": 1,
+   "j -> w": 1
+  },
+  "texts": [
+   {
+    "text": "O nome Brian Anderson significa alguma coisa para você?",
+    "trained_tokens": "<bos> ʊ <sp> n o m y <sp> b r i ɐ̃ ŋ <sp> æ n d e r s o ŋ <sp> s i ɡ n i f i k æ <sp> aʊ ɡ u m æ <sp> k oɪ z æ <sp> p a ɾ æ <sp> v o s e ? <eos>",
+    "these_tokens": "<bos> ʊ <sp> n o m y <sp> b r aɪ ɐ̃ ŋ <sp> ɐ̃ ŋ d e ɾ ə s o ŋ <sp> s i ɡ n i f i k æ <sp> aʊ ɡ u m æ <sp> k oɪ z æ <sp> p a ɾ æ <sp> v o s e ? <eos>",
+    "only_stress_differs": false
+   },
+   {
+    "text": "O que você fez Kevin?",
+    "trained_tokens": "<bos> ʊ <sp> k y <sp> v o s e <sp> f e s <sp> k e v i n ? <eos>",
+    "these_tokens": "<bos> ʊ <sp> k y <sp> v o s e <sp> f e s <sp> k ɛ v i n ? <eos>",
+    "only_stress_differs": false
+   },
+   {
+    "text": "Quem foi Juscelino Kubitschek?",
+    "trained_tokens": "<bos> k eɪ ŋ <sp> f oɪ <sp> ʒ u s e l i n ʊ <sp> k u b i t s ʃ e k ? <eos>",
+    "these_tokens": "<bos> k eɪ ŋ <sp> f oɪ <sp> ʒ u s e l i n ʊ <sp> k u b y ʃ ɛ k ? <eos>",
+    "only_stress_differs": false
+   },
+   {
+    "text": "Tia Stephanie vem ainda?",
+    "trained_tokens": "<bos> tʃ i æ <sp> s t e f æ n i y <sp> v eɪ ŋ <sp> a i ŋ d æ ? <eos>",
+    "these_tokens": "<bos> tʃ i æ <sp> s t ɛ f æ n i y <sp> v eɪ ŋ <sp> a i ŋ d æ ? <eos>",
+    "only_stress_differs": false
+   },
+   {
+    "text": "Tem certeza de que o caso Joe está acontecendo na próxima semana?",
+    "trained_tokens": "<bos> t eɪ ŋ <sp> s e ɾ ə t e z æ <sp> dʒ y <sp> k y <sp> ʊ <sp> k a z ʊ <sp> ʒ o j <sp> e s t a <sp> a k o ŋ t e s eɪ ŋ d ʊ <sp> n a <sp> p r ɔ s i m æ <sp> s e m ɐ̃ n æ ? <eos>",
+    "these_tokens": "<bos> t eɪ ŋ <sp> s e ɾ ə t e z æ <sp> dʒ y <sp> k y <sp> ʊ <sp> k a z ʊ <sp> ʒ i o w <sp> e s t a <sp> a k o ŋ t e s eɪ ŋ d ʊ <sp> n a <sp> p r ɔ s i m æ <sp> s e m ɐ̃ n æ ? <eos>",
+    "only_stress_differs": false
+   },
+   {
+    "text": "Me dê aquela ligação no fio de Patrick!",
+    "trained_tokens": "<bos> m y <sp> d e <sp> a k ɛ l æ <sp> l i ɡ a s ɐ̃ʊ̃ <sp> n ʊ <sp> f iʊ <sp> dʒ y <sp> p a t r i k ! <eos>",
+    "these_tokens": "<bos> m y <sp> d e <sp> a k ɛ l æ <sp> l i ɡ a s ɐ̃ʊ̃ <sp> n ʊ <sp> f iʊ <sp> dʒ y <sp> p a t r i k ! <eos>",
+    "only_stress_differs": true
+   },
+   {
+    "text": "Um ultimato de Edward e desta final!",
+    "trained_tokens": "<bos> ũ ŋ <sp> u w tʃ i m a t ʊ <sp> dʒ j <sp> e d w a ɾ ə d <sp> i <sp> d ɛ s t æ <sp> f i n aʊ ! <eos>",
+    "these_tokens": "<bos> ũ ŋ <sp> u w tʃ i m a t ʊ <sp> dʒ j <sp> ɛ d w a ɾ ə d <sp> i <sp> d ɛ s t æ <sp> f i n aʊ ! <eos>",
+    "only_stress_differs": false
+   },
+   {
+    "text": "Hasta la victoria siempre! Patria o muerte!",
+    "trained_tokens": "<bos> a s t æ <sp> l æ <sp> v i k t o ɾ i æ <sp> s i eɪ m p r y ! p a t r i æ <sp> ʊ <sp> m u ɛ ɾ ə tʃ y ! <eos>",
+    "these_tokens": "<bos> a s t æ <sp> l æ <sp> v i k t ɔ ɾ j æ <sp> s i eɪ m p r y ! p a t r i æ <sp> ʊ <sp> m u ɛ ɾ ə tʃ y ! <eos>",
+    "only_stress_differs": false
+   },
+   {
+    "text": "Janet Roger morreu há três meses.",
+    "trained_tokens": "<bos> ʒ ɐ̃ n ɛ tʃ <sp> x o ʒ e r <sp> m o x eʊ <sp> a <sp> t r e z <sp> m e z y s . <eos>",
+    "these_tokens": "<bos> ʒ ɐ̃ n ɛ tʃ <sp> x o ʒ e r <sp> m o x eʊ <sp> a <sp> t r e z <sp> m e z y s . <eos>",
+    "only_stress_differs": true
+   },
+   {
+    "text": "Tiffany nos disse, o banco é feito de madeira de faia.",
+    "trained_tokens": "<bos> tʃ i f ɐ̃ n i <sp> n ʊ z <sp> dʒ i s y , ʊ <sp> b ɐ̃ ŋ k w <sp> ɛ <sp> f eɪ t ʊ <sp> dʒ y <sp> m a d eɪ ɾ æ <sp> dʒ y <sp> f aɪ æ . <eos>",
+    "these_tokens": "<bos> tʃ i f ɐ̃ n i <sp> n ʊ z <sp> dʒ i s y , ʊ <sp> b ɐ̃ ŋ k w <sp> ɛ <sp> f eɪ t ʊ <sp> dʒ y <sp> m a d eɪ ɾ æ <sp> dʒ y <sp> f aɪ æ . <eos>",
+    "only_stress_differs": true
+   },
+   {
+    "text": "Camile, Caíque, Cauan, Kaique e Gabrieli.",
+    "trained_tokens": "<bos> k æ m i l y , k a i k y , k aʊ ɐ̃ ŋ , k aɪ k j <sp> i <sp> ɡ a b r i e l i . <eos>",
+    "these_tokens": "<bos> k æ m i l y , k a i k y , k aʊ ɐ̃ ŋ , k a i k y <sp> i <sp> ɡ a b r i e l i . <eos>",
+    "only_stress_differs": false
+   },
+   {
+    "text": "Antônio Inacio Lima de Melo.",
+    "trained_tokens": "<bos> ɐ̃ ŋ t o n j w <sp> i n a s iʊ <sp> l i m æ <sp> dʒ y <sp> m ɛ l ʊ . <eos>",
+    "these_tokens": "<bos> ɐ̃ ŋ t o n j w <sp> i n a s j ʊ <sp> l i m æ <sp> dʒ y <sp> m ɛ l ʊ . <eos>",
+    "only_stress_differs": false
+   },
+   {
+    "text": "Catia Maria Pereira Furtado.",
+    "trained_tokens": "<bos> k a tʃ i æ <sp> m a ɾ i æ <sp> p e ɾ eɪ ɾ æ <sp> f u ɾ ə t a d ʊ . <eos>",
+    "these_tokens": "<bos> k a tʃ j æ <sp> m a ɾ i æ <sp> p e ɾ eɪ ɾ æ <sp> f u ɾ ə t a d ʊ . <eos>",
+    "only_stress_differs": false
+   },
+   {
+    "text": "Jerry não podia acreditar.",
+    "trained_tokens": "<bos> ʒ e x i <sp> n ɐ̃ʊ̃ <sp> p o dʒ i æ <sp> a k r e dʒ i t a r . <eos>",
+    "these_tokens": "<bos> ʒ ɛ x i <sp> n ɐ̃ʊ̃ <sp> p o dʒ i æ <sp> a k r e dʒ i t a r . <eos>",
+    "only_stress_differs": false
+   },
+   {
+    "text": "Victoria faz as coisas de uma maneira muito maior.",
+    "trained_tokens": "<bos> v i k t o ɾ i æ <sp> f a z <sp> a s <sp> k oɪ z æ z <sp> dʒ j <sp> u m æ <sp> m æ n eɪ ɾ æ <sp> m w i ŋ t ʊ <sp> m aɪ ɔ r . <eos>",
+    "these_tokens": "<bos> v i k t ɔ ɾ j æ <sp> f a z <sp> a s <sp> k oɪ z æ z <sp> dʒ j <sp> u m æ <sp> m æ n eɪ ɾ æ <sp> m w i ŋ t ʊ <sp> m aɪ ɔ r . <eos>",
+    "only_stress_differs": false
+   },
+   {
+    "text": "Caio e Ana Luiza.",
+    "trained_tokens": "<bos> k aɪ w <sp> i <sp> ɐ̃ n æ <sp> l uɪ z æ . <eos>",
+    "these_tokens": "<bos> k aɪ w <sp> i <sp> ɐ̃ n æ <sp> l u i z æ . <eos>",
+    "only_stress_differs": false
+   },
+   {
+    "text": "Atila da Silva Amorim.",
+    "trained_tokens": "<bos> a tʃ i l æ <sp> d a <sp> s iʊ v æ <sp> æ m o ɾ i ŋ . <eos>",
+    "these_tokens": "<bos> a tʃ i l æ <sp> d a <sp> s iʊ v æ <sp> æ m o ɾ i ŋ . <eos>",
+    "only_stress_differs": true
+   },
+   {
+    "text": "Victoria nasceu no décimo nono anos setenta.",
+    "trained_tokens": "<bos> v i k t o ɾ i æ <sp> n a s eʊ <sp> n ʊ <sp> d ɛ s i m ʊ <sp> n o n w <sp> ɐ̃ n ʊ s <sp> s e t eɪ ŋ t æ . <eos>",
+    "these_tokens": "<bos> v i k t ɔ ɾ j æ <sp> n a s eʊ <sp> n ʊ <sp> d ɛ s i m ʊ <sp> n o n w <sp> ɐ̃ n ʊ s <sp> s e t eɪ ŋ t æ . <eos>",
+    "only_stress_differs": false
+   },
+   {
+    "text": "Paul estava atrasado na aula.",
+    "trained_tokens": "<bos> p aʊ l <sp> e s t a v æ <sp> a t r a z a d ʊ <sp> n a <sp> aʊ l æ . <eos>",
+    "these_tokens": "<bos> p ɔ l <sp> e s t a v æ <sp> a t r a z a d ʊ <sp> n a <sp> aʊ l æ . <eos>",
+    "only_stress_differs": false
+   },
+   {
+    "text": "Desculpe por interromper sua palestra?, senhor Edward.",
+    "trained_tokens": "<bos> d e s k u w p y <sp> p o ɾ <sp> i ŋ t e x o m p e r <sp> s u æ <sp> p a l ɛ s t r æ ? , s e ɲ o ɾ <sp> e d w a ɾ ə d . <eos>",
+    "these_tokens": "<bos> d e s k u w p y <sp> p o ɾ <sp> i ŋ t e x o m p e r <sp> s u æ <sp> p a l ɛ s t r æ ? , s e ɲ o ɾ <sp> ɛ d w a ɾ ə d . <eos>",
+    "only_stress_differs": false
+   },
+   {
+    "text": "Aristoteles Bezerra de Almeida Neto.",
+    "trained_tokens": "<bos> a ɾ i s t o t ɛ l y z <sp> b e z e x æ <sp> dʒ j <sp> aʊ m eɪ d æ <sp> n ɛ t ʊ . <eos>",
+    "these_tokens": "<bos> a ɾ i s t ɔ t e l y s <sp> b e z e x æ <sp> dʒ j <sp> aʊ m eɪ d æ <sp> n ɛ t ʊ . <eos>",
+    "only_stress_differs": false
+   },
+   {
+    "text": "Alan Johnny Freitas de Assis.",
+    "trained_tokens": "<bos> a l ə ŋ <sp> ʒ o n i <sp> f r eɪ t æ z <sp> dʒ j <sp> a s i s . <eos>",
+    "these_tokens": "<bos> a l ɐ̃ ŋ <sp> ʒ o n i <sp> f r eɪ t æ z <sp> dʒ j <sp> a s i s . <eos>",
+    "only_stress_differs": false
+   },
+   {
+    "text": "Jefferson joga pelo Botafogo.",
+    "trained_tokens": "<bos> ʒ e f e ɾ ə s o ŋ <sp> ʒ ɔ ɡ æ <sp> p e l ʊ <sp> b o t a f ɔ ɡ ʊ . <eos>",
+    "these_tokens": "<bos> ʒ ɛ f e ɾ ə s o ŋ <sp> ʒ ɔ ɡ æ <sp> p e l ʊ <sp> b o t a f ɔ ɡ ʊ . <eos>",
+    "only_stress_differs": false
+   },
+   {
+    "text": "Dennis não podia se aproximar do monólito.",
+    "trained_tokens": "<bos> d eɪ ŋ n i z <sp> n ɐ̃ʊ̃ <sp> p o dʒ i æ <sp> s j <sp> a p r o s i m a r <sp> d ʊ <sp> m o n ɔ l i t ʊ . <eos>",
+    "these_tokens": "<bos> d eɪ ŋ n i z <sp> n ɐ̃ʊ̃ <sp> p o dʒ i æ <sp> s j <sp> a p r o s i m a r <sp> d ʊ <sp> m o n ɔ l i t ʊ . <eos>",
+    "only_stress_differs": true
+   },
+   {
+    "text": "Claudemir de Sales Rosario.",
+    "trained_tokens": "<bos> k l aʊ d e m i r <sp> dʒ y <sp> s a l y z <sp> x o z a ɾ iʊ . <eos>",
+    "these_tokens": "<bos> k l aʊ d e m i r <sp> dʒ y <sp> s a l y z <sp> x o z a ɾ j ʊ . <eos>",
+    "only_stress_differs": false
+   },
+   {
+    "text": "Igor Mendes e Enzo Lima vão apresentar o projeto amanhã.",
+    "trained_tokens": "<bos> i ɡ o r <sp> m eɪ ŋ dʒ y z <sp> i <sp> eɪ ŋ z ʊ <sp> l i m æ <sp> v ɐ̃ʊ̃ <sp> a p r e z eɪ ŋ t a ɾ <sp> ʊ <sp> p r o ʒ ɛ t w <sp> æ m ɐ̃ ɲ ɐ̃ . <eos>",
+    "these_tokens": "<bos> i ɡ o r <sp> m eɪ ŋ dʒ y z <sp> i <sp> eɪ ŋ z ʊ <sp> l i m æ <sp> v ɐ̃ʊ̃ <sp> a p r e z eɪ ŋ t a ɾ <sp> ʊ <sp> p r o ʒ ɛ t w <sp> æ m ɐ̃ ɲ ɐ̃ . <eos>",
+    "only_stress_differs": true
+   },
+   {
+    "text": "Por que Igor não veio na sábado?",
+    "trained_tokens": "<bos> p o r <sp> k e <sp> i ɡ o r <sp> n ɐ̃ʊ̃ <sp> v eɪ ʊ <sp> n a <sp> s a b æ d ʊ ? <eos>",
+    "these_tokens": "<bos> p o r <sp> k e <sp> i ɡ o r <sp> n ɐ̃ʊ̃ <sp> v eɪ ʊ <sp> n a <sp> s a b æ d ʊ ? <eos>",
+    "only_stress_differs": true
+   },
+   {
+    "text": "Parabéns pelos seus vinte e nove anos, Igor!",
+    "trained_tokens": "<bos> p a ɾ a b eɪ ŋ s <sp> p e l ʊ s <sp> s eʊ z <sp> v i ŋ tʃ j <sp> i <sp> n ɔ v j <sp> ɐ̃ n ʊ s , i ɡ o r ! <eos>",
+    "these_tokens": "<bos> p a ɾ a b eɪ ŋ s <sp> p e l ʊ s <sp> s eʊ z <sp> v i ŋ tʃ j <sp> i <sp> n ɔ v j <sp> ɐ̃ n ʊ s , i ɡ o r ! <eos>",
+    "only_stress_differs": true
+   },
+   {
+    "text": "Igor ficou em quarto lugar na corrida.",
+    "trained_tokens": "<bos> i ɡ o r <sp> f i k o w <sp> eɪ ŋ <sp> k w a ɾ ə t ʊ <sp> l u ɡ a r <sp> n a <sp> k o x i d æ . <eos>",
+    "these_tokens": "<bos> i ɡ o r <sp> f i k o w <sp> eɪ ŋ <sp> k w a ɾ ə t ʊ <sp> l u ɡ a r <sp> n a <sp> k o x i d æ . <eos>",
+    "only_stress_differs": true
+   },
+   {
+    "text": "Letícia Lima e Igor Santos vão apresentar o projeto amanhã.",
+    "trained_tokens": "<bos> l e tʃ i s j æ <sp> l i m æ <sp> i <sp> i ɡ o r <sp> s ɐ̃ ŋ t ʊ z <sp> v ɐ̃ʊ̃ <sp> a p r e z eɪ ŋ t a ɾ <sp> ʊ <sp> p r o ʒ ɛ t w <sp> æ m ɐ̃ ɲ ɐ̃ . <eos>",
+    "these_tokens": "<bos> l e tʃ i s j æ <sp> l i m æ <sp> i <sp> i ɡ o r <sp> s ɐ̃ ŋ t ʊ z <sp> v ɐ̃ʊ̃ <sp> a p r e z eɪ ŋ t a ɾ <sp> ʊ <sp> p r o ʒ ɛ t w <sp> æ m ɐ̃ ɲ ɐ̃ . <eos>",
+    "only_stress_differs": true
+   },
+   {
+    "text": "Igor gastou quatrocentos e doze mil quatrocentos e onze reais na reforma da cozinha.",
+    "trained_tokens": "<bos> i ɡ o r <sp> ɡ a s t o w <sp> k w a t r o s eɪ ŋ t ʊ z <sp> i <sp> d o z y <sp> m iʊ <sp> k w a t r o s eɪ ŋ t ʊ z <sp> i <sp> o ŋ z y <sp> x e aɪ z <sp> n a <sp> x e f ɔ ɾ ə m æ <sp> d a <sp> k o z i ɲ æ . <eos>",
+    "these_tokens": "<bos> i ɡ o r <sp> ɡ a s t o w <sp> k w a t r o s eɪ ŋ t ʊ z <sp> i <sp> d o z y <sp> m iʊ <sp> k w a t r o s eɪ ŋ t ʊ z <sp> i <sp> o ŋ z y <sp> x e aɪ z <sp> n a <sp> x e f ɔ ɾ ə m æ <sp> d a <sp> k o z i ɲ æ . <eos>",
+    "only_stress_differs": true
+   },
+   {
+    "text": "Prazer, eu sou Laura Soares, e esta é a minha irmã, Igor.",
+    "trained_tokens": "<bos> p r a z e r , eʊ <sp> s o w <sp> l aʊ ɾ æ <sp> s o a ɾ y s , i <sp> ɛ s t æ <sp> ɛ <sp> a <sp> m i ɲ æ <sp> i ɾ ə m ɐ̃ , i ɡ o r . <eos>",
+    "these_tokens": "<bos> p r a z e r , eʊ <sp> s o w <sp> l aʊ ɾ æ <sp> s o a ɾ y s , i <sp> ɛ s t æ <sp> ɛ <sp> a <sp> m i ɲ æ <sp> i ɾ ə m ɐ̃ , i ɡ o r . <eos>",
+    "only_stress_differs": true
+   },
+   {
+    "text": "Igor, o café custa sessenta reais na loja de baixo.",
+    "trained_tokens": "<bos> i ɡ o r , ʊ <sp> k a f ɛ <sp> k u s t æ <sp> s e s eɪ ŋ t æ <sp> x e aɪ z <sp> n a <sp> l ɔ ʒ æ <sp> dʒ y <sp> b aɪ ʃ ʊ . <eos>",
+    "these_tokens": "<bos> i ɡ o r , ʊ <sp> k a f ɛ <sp> k u s t æ <sp> s e s eɪ ŋ t æ <sp> x e aɪ z <sp> n a <sp> l ɔ ʒ æ <sp> dʒ y <sp> b aɪ ʃ ʊ . <eos>",
+    "only_stress_differs": true
+   },
+   {
+    "text": "Igor, o leite custa doze reais na loja de baixo.",
+    "trained_tokens": "<bos> i ɡ o r , ʊ <sp> l eɪ tʃ y <sp> k u s t æ <sp> d o z y <sp> x e aɪ z <sp> n a <sp> l ɔ ʒ æ <sp> dʒ y <sp> b aɪ ʃ ʊ . <eos>",
+    "these_tokens": "<bos> i ɡ o r , ʊ <sp> l eɪ tʃ y <sp> k u s t æ <sp> d o z y <sp> x e aɪ z <sp> n a <sp> l ɔ ʒ æ <sp> dʒ y <sp> b aɪ ʃ ʊ . <eos>",
+    "only_stress_differs": true
+   },
+   {
+    "text": "A professora já chegou, Igor?",
+    "trained_tokens": "<bos> a <sp> p r o f e s o ɾ æ <sp> ʒ a <sp> ʃ e ɡ o w , i ɡ o r ? <eos>",
+    "these_tokens": "<bos> a <sp> p r o f e s o ɾ æ <sp> ʒ a <sp> ʃ e ɡ o w , i ɡ o r ? <eos>",
+    "only_stress_differs": true
+   },
+   {
+    "text": "Igor quer nadar com a gente às dez e meia?",
+    "trained_tokens": "<bos> i ɡ o r <sp> k ɛ r <sp> n a d a r <sp> k o ŋ <sp> a <sp> ʒ eɪ ŋ tʃ j <sp> aː z <sp> d ɛ z <sp> i <sp> m eɪ æ ? <eos>",
+    "these_tokens": "<bos> i ɡ o r <sp> k ɛ r <sp> n a d a r <sp> k o ŋ <sp> a <sp> ʒ eɪ ŋ tʃ j <sp> aː z <sp> d ɛ z <sp> i <sp> m eɪ æ ? <eos>",
+    "only_stress_differs": true
+   },
+   {
+    "text": "Igor me disse que o celular estava quebrado.",
+    "trained_tokens": "<bos> i ɡ o r <sp> m y <sp> dʒ i s y <sp> k y <sp> ʊ <sp> s e l u l a ɾ <sp> e s t a v æ <sp> k e b r a d ʊ . <eos>",
+    "these_tokens": "<bos> i ɡ o r <sp> m y <sp> dʒ i s y <sp> k y <sp> ʊ <sp> s e l u l a ɾ <sp> e s t a v æ <sp> k e b r a d ʊ . <eos>",
+    "only_stress_differs": true
+   },
+   {
+    "text": "Bora pescar agora, Igor!",
+    "trained_tokens": "<bos> b ɔ ɾ æ <sp> p e s k a ɾ <sp> a ɡ ɔ ɾ æ , i ɡ o r ! <eos>",
+    "these_tokens": "<bos> b ɔ ɾ æ <sp> p e s k a ɾ <sp> a ɡ ɔ ɾ æ , i ɡ o r ! <eos>",
+    "only_stress_differs": true
+   },
+   {
+    "text": "Vamos dançar domingo, Igor?",
+    "trained_tokens": "<bos> v ɐ̃ m ʊ z <sp> d ɐ̃ ŋ s a r <sp> d o m i ŋ ɡ ʊ , i ɡ o r ? <eos>",
+    "these_tokens": "<bos> v ɐ̃ m ʊ z <sp> d ɐ̃ ŋ s a r <sp> d o m i ŋ ɡ ʊ , i ɡ o r ? <eos>",
+    "only_stress_differs": true
+   },
+   {
+    "text": "Igor quer dançar com a gente às quatro?",
+    "trained_tokens": "<bos> i ɡ o r <sp> k ɛ r <sp> d ɐ̃ ŋ s a r <sp> k o ŋ <sp> a <sp> ʒ eɪ ŋ tʃ j <sp> aː s <sp> k w a t r ʊ ? <eos>",
+    "these_tokens": "<bos> i ɡ o r <sp> k ɛ r <sp> d ɐ̃ ŋ s a r <sp> k o ŋ <sp> a <sp> ʒ eɪ ŋ tʃ j <sp> aː s <sp> k w a t r ʊ ? <eos>",
+    "only_stress_differs": true
+   },
+   {
+    "text": "O cartão é seu ou da Igor?",
+    "trained_tokens": "<bos> ʊ <sp> k a ɾ ə t ɐ̃ʊ̃ <sp> ɛ <sp> s eʊ <sp> o w <sp> d a <sp> i ɡ o r ? <eos>",
+    "these_tokens": "<bos> ʊ <sp> k a ɾ ə t ɐ̃ʊ̃ <sp> ɛ <sp> s eʊ <sp> o w <sp> d a <sp> i ɡ o r ? <eos>",
+    "only_stress_differs": true
+   },
+   {
+    "text": "O cartão é seu ou da Igor?",
+    "trained_tokens": "<bos> ʊ <sp> k a ɾ ə t ɐ̃ʊ̃ <sp> ɛ <sp> s eʊ <sp> o w <sp> d a <sp> i ɡ o r ? <eos>",
+    "these_tokens": "<bos> ʊ <sp> k a ɾ ə t ɐ̃ʊ̃ <sp> ɛ <sp> s eʊ <sp> o w <sp> d a <sp> i ɡ o r ? <eos>",
+    "only_stress_differs": true
+   }
+  ]
+ }
+}

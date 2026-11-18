@@ -144,9 +144,11 @@ The normalizer writes out what a Brazilian would say:
 Requirements: Python with numpy, onnxruntime and soundfile
 (`requirements.txt`; tested on Python 3.12 with numpy 1.26.4, onnxruntime
 1.19.0 and soundfile 0.12.1, and with numpy 2.5.5, onnxruntime 1.32.0 and
-soundfile 0.14.0), plus the `espeak-ng` program. With another eSpeak NG
-version the code warns, because the model learned 1.51's phonemes and other
-versions may phonemize some words differently.
+soundfile 0.14.0), plus the `espeak-ng` program. The model learned eSpeak
+NG 1.51's phonemes, and the code warns when another version is installed. On
+9,013 corpus and evaluation texts, Debian 12's eSpeak NG 1.51 gives exactly
+the training tokens; Debian 13's 1.52 gives different tokens for 42 of them,
+almost all in names ([`eval/espeak_versions.json`](eval/espeak_versions.json)).
 
 Tests: `python -m unittest discover -s tests -v`. They check that the front
 end still makes the tokens the model was trained on and that both voices
